@@ -1,8 +1,8 @@
-version: '3'
+version: '1'
 
 services:
   app:
-    container_name: setup-nodejs
+    container_name: Adopet
     build:
       context: .
       dockerfile: Dockerfile
