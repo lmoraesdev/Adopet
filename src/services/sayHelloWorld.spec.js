@@ -1,15 +1,15 @@
-const sayHelloWorld = require('./sayHelloWorld')
+import sayHello from './sayHelloWorld';
 
 describe('Say Hello test', () => {
   it('Should say Hello World', () => {
-    const response = sayHelloWorld.sayHello()
+    const response = sayHello();
 
-    expect(response).toBe('Hello World!')
-  })
+    expect(response).toBe('Hello World!');
+  });
 
   it('Should say Hello Adopet', () => {
-    const response = sayHelloWorld.sayHello('Adopet')
+    const response = sayHello('Adopet');
 
-    expect(response).toBe('Hello Adopet!')
-  })
-})
+    expect(response).toBe('Hello Adopet!');
+  });
+});

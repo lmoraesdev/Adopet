@@ -1,14 +1,12 @@
-const express = require('express');
+import express from 'express';
+import sayHello from './services/sayHelloWorld';
+
 const app = express();
 
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  const {sayHello} = require('./services/sayHelloWorld')
-
   res.send(sayHello());
 });
 
-module.exports = {
-  app,
-}
+export default app;

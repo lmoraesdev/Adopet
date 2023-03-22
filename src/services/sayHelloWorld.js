@@ -1,3 +1,5 @@
-exports.sayHello = (name='') => {
-  return `Hello ${name ? name : 'World'}!`
+function sayHello(name = '') {
+  return `Hello ${name || 'World'}!`;
 }
+
+export default sayHello;
