@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "Projeto de um api para site de adoção de animais em node.js",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "lint": "eslint . --ext .js",
     "lint-fix": "eslint . --ext .js --fix",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
     "start": "node src/index.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
   },
   "repository": {
     "type": "git",
