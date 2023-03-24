@@ -1,4 +1,4 @@
-FROM node:16-slim as BUILDER
+FROM node:18-slim as BUILDER
 LABEL maintainer="lmoraesdev"
 
 WORKDIR /usr/src/app
@@ -9,7 +9,7 @@ RUN npm install
 
 COPY src ./src
 
-FROM node:16-alpine
+FROM node:18.15-alpine
 
 ARG NODE_ENV
 

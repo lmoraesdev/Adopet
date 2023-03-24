@@ -1,4 +1,4 @@
-import sayHello from './sayHelloWorld';
+import sayHello from './sayHelloWorld.js';
 
 describe('Say Hello test', () => {
   it('Should say Hello World', () => {

@@ -4,7 +4,12 @@
         "node": true,
         "jest": true
     },
-    "extends": ["airbnb-base","eslint:recommended","plugin:prettier/recommended","prettier"],
+    "extends": [
+        "airbnb-base",
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
     "overrides": [
     ],
     "plugins": ["prettier"],
@@ -15,6 +20,7 @@
     "rules": {
         "no-console": 1,
         "prettier/prettier": 2,
-        "no-undef": 0
+        "no-undef": 0,
+        "import/extensions": ["error", "ignorePackages", {"js": "never"}]
     }
 }

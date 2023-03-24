@@ -1,5 +1,5 @@
 import express from 'express';
-import sayHello from './services/sayHelloWorld';
+import sayHello from './services/sayHelloWorld.js';
 
 const app = express();
 
